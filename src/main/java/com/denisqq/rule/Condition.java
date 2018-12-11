@@ -7,4 +7,5 @@ public class Condition extends Statement {
     public Condition(FuzzySet term, String name, Variable variable) {
         super(term, name, variable);
     }
+
 }

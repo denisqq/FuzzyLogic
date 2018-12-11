@@ -1,14 +1,16 @@
 package com.denisqq.functions;
 
-public class Triangle implements Function {
+import com.denisqq.set.FuzzySet;
+
+public class Triangle implements FuzzySet {
 
     private Double opposite;
     private Double adjacent;
     private Double hypotenuse;
 
     public Triangle() {
-    }
 
+    }
 
     @Override
     public Double getValue(Double x) {

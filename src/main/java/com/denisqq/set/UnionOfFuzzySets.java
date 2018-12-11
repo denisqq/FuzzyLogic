@@ -1,6 +1,8 @@
 package com.denisqq.set;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class UnionOfFuzzySets implements FuzzySet {
 
@@ -9,6 +11,7 @@ public class UnionOfFuzzySets implements FuzzySet {
     public UnionOfFuzzySets() {}
 
     public void addFuzzySet(FuzzySet fuzzySet) {
+        fuzzySets = Optional.ofNullable(fuzzySets).orElse(new ArrayList<>());
         fuzzySets.add(fuzzySet);
     }
 
@@ -21,6 +24,10 @@ public class UnionOfFuzzySets implements FuzzySet {
     }
 
 
-
-
+    @Override
+    public String toString() {
+        return "UnionOfFuzzySets{" +
+                "fuzzySets=" + fuzzySets +
+                '}';
+    }
 }

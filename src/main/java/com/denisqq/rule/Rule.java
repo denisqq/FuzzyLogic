@@ -1,20 +1,14 @@
 package com.denisqq.rule;
 
+import java.io.Serializable;
+import java.util.Objects;
 import java.util.stream.Stream;
 import java.util.List;
 
 public class Rule {
 
-    private List<Conclusion> conclusionList;
     private List<Condition> conditionList;
-
-    public List<Conclusion> getConclusionList() {
-        return conclusionList;
-    }
-
-    public void setConclusionList(List<Conclusion> conclusionList) {
-        this.conclusionList = conclusionList;
-    }
+    private Conclusion conclusion;
 
     public List<Condition> getConditionList() {
         return conditionList;
@@ -28,11 +22,19 @@ public class Rule {
         return this.conditionList.stream();
     }
 
+    public Conclusion getConclusion() {
+        return conclusion;
+    }
+
+    public void setConclusion(Conclusion conclusion) {
+        this.conclusion = conclusion;
+    }
+
     @Override
     public String toString() {
         return "Rule{" +
-                "conclusionList=" + conclusionList +
-                ", conditionList=" + conditionList +
+                "conditionList=" + conditionList +
+                ", conclusion=" + conclusion +
                 '}';
     }
 }

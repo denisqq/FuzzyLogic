@@ -2,6 +2,8 @@ package com.denisqq.rule;
 
 import com.denisqq.set.FuzzySet;
 
+import java.util.Objects;
+
 public class Statement {
 
     private FuzzySet term;
@@ -39,6 +41,7 @@ public class Statement {
     public void setVariable(Variable variable) {
         this.variable = variable;
     }
+
 
     @Override
     public String toString() {

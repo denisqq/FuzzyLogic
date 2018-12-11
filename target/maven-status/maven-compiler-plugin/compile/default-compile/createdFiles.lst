@@ -10,5 +10,4 @@ com\denisqq\rule\Variable.class
 com\denisqq\set\FuzzySet.class
 com\denisqq\Logic.class
 com\denisqq\Main.class
-com\denisqq\term\TermInfo.class
 com\denisqq\set\UnionOfFuzzySets.class

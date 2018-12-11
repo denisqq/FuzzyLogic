@@ -15,4 +15,13 @@ public class ActivatedFuzzySet implements FuzzySet {
     public Double getValue(Double x) {
         return Math.min(fuzzySet.getValue(x), truthDegree);
     }
+
+
+    @Override
+    public String toString() {
+        return "ActivatedFuzzySet{" +
+                "fuzzySet=" + fuzzySet +
+                ", truthDegree=" + truthDegree +
+                '}';
+    }
 }

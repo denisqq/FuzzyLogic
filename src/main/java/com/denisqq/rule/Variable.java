@@ -1,5 +1,7 @@
 package com.denisqq.rule;
 
+import java.util.Objects;
+
 public class Variable {
     private Integer id;
 

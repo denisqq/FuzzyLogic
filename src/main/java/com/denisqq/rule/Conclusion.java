@@ -2,6 +2,8 @@ package com.denisqq.rule;
 
 import com.denisqq.set.FuzzySet;
 
+import java.util.Objects;
+
 
 public class Conclusion extends Statement{
 
