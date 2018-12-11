@@ -1,15 +1,35 @@
 package com.denisqq.rule;
 
-import com.denisqq.term.TermInfo;
+import com.denisqq.set.FuzzySet;
 
 public class Statement {
 
-    private Variable variable;
-    private TermInfo term;
+    private FuzzySet term;
 
-    public Statement(Variable variable, TermInfo term) {
-        this.variable = variable;
+    private String name;
+
+    private Variable variable;
+
+    public Statement(FuzzySet term, String name, Variable variable) {
         this.term = term;
+        this.name = name;
+        this.variable = variable;
+    }
+
+    public FuzzySet getTerm() {
+        return term;
+    }
+
+    public void setTerm(FuzzySet term) {
+        this.term = term;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Variable getVariable() {
@@ -20,19 +40,12 @@ public class Statement {
         this.variable = variable;
     }
 
-    public TermInfo getTerm() {
-        return term;
-    }
-
-    public void setTerm(TermInfo term) {
-        this.term = term;
-    }
-
     @Override
     public String toString() {
         return "Statement{" +
-                "variable=" + variable +
-                ", term=" + term +
+                "term=" + term +
+                ", name='" + name + '\'' +
+                ", variable=" + variable +
                 '}';
     }
 }

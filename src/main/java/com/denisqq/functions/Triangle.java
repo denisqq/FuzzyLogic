@@ -1,6 +1,6 @@
 package com.denisqq.functions;
 
-public class Triangle extends Function {
+public class Triangle implements Function {
 
     private Double opposite;
     private Double adjacent;
@@ -9,9 +9,6 @@ public class Triangle extends Function {
     public Triangle() {
     }
 
-    public Triangle(Double activatedValue) {
-        super(activatedValue);
-    }
 
     @Override
     public Double getValue(Double x) {

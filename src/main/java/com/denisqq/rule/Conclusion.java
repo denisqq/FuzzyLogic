@@ -1,16 +1,16 @@
 package com.denisqq.rule;
 
-import com.denisqq.term.TermInfo;
+import com.denisqq.set.FuzzySet;
+
 
 public class Conclusion extends Statement{
 
     private Double weight;
 
-    public Conclusion(Variable variable, TermInfo term, Double weight) {
-        super(variable, term);
+    public Conclusion(FuzzySet term, String name, Variable variable, Double weight) {
+        super(term, name, variable);
         this.weight = weight;
     }
-
 
     public Double getWeight() {
         return weight;

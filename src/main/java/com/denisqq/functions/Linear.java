@@ -1,13 +1,14 @@
 package com.denisqq.functions;
 
-public class Linear extends Function{
+public class Linear implements Function{
 
     public Linear() {
 
     }
 
-    public Linear(Double value) {
-        super(value);
+    @Override
+    public Double getValue(Double x) {
+        return null;
     }
 
 

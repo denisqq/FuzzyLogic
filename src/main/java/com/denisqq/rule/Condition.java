@@ -1,13 +1,10 @@
 package com.denisqq.rule;
 
-import com.denisqq.term.TermInfo;
+import com.denisqq.set.FuzzySet;
 
 public class Condition extends Statement {
 
-    public Condition(Variable variable, TermInfo term) {
-        super(variable, term);
+    public Condition(FuzzySet term, String name, Variable variable) {
+        super(term, name, variable);
     }
-
-
-
 }

@@ -1,4 +1,8 @@
 package com.denisqq.set;
 
-public class FuzzySet {
+import java.util.stream.Stream;
+
+public interface FuzzySet {
+
+    Double getValue(Double x);
 }

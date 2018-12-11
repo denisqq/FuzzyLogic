@@ -1,8 +1,7 @@
 package com.denisqq.rule;
 
-import com.sun.tools.javac.util.List;
-
 import java.util.stream.Stream;
+import java.util.List;
 
 public class Rule {
 

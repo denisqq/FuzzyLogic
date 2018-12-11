@@ -21,11 +21,7 @@ public class Logic {
     }
 
     private Double getConditionValue(Condition condition, List<Double> values){
-
-        return values.stream()
-                /*.filter(val -> val.equals(condition.getVariable().getId()))*/
-                .map(val -> condition.getTerm().getAccessoryFunc().getValue(val))
-                .findFirst()
-                .orElse(0.0D);
+        return condition.getTerm()
+                .getValue(values.get(condition.getVariable().getId()));
     }
 }
