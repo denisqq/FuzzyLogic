@@ -1,5 +1,6 @@
 package com.denisqq;
 
+import com.denisqq.functions.Trapezoid;
 import com.denisqq.functions.Triangle;
 import com.denisqq.rule.Conclusion;
 import com.denisqq.rule.Condition;
@@ -15,18 +16,22 @@ public class Main {
 
     public static void main(String[] args) {
         Logic logic = new Logic();
-        List<Double> values = Arrays.asList(13D, 18D);
-        Triangle small = new Triangle()
+        List<Double> values = Arrays.asList(5D, 7D);
+        Triangle onFoot = new Triangle()
                 .setOpposite(0D)
-                .setAdjacent(15D)
-                .setHypotenuse(15D)
+                .setAdjacent(12D)
+                .setHypotenuse(13D)
                 .build();
 
-        Triangle big = new Triangle()
-                .setOpposite(7D)
-                .setAdjacent(20D)
-                .setHypotenuse(20D)
+        Triangle onCar = new Triangle()
+                .setOpposite(8D)
+                .setAdjacent(15D)
+                .setHypotenuse(17D)
                 .build();
+
+        Trapezoid big = new Trapezoid(7.0D, 25.0D, 70.0D, 100.0D);
+        Trapezoid small = new Trapezoid(0.0D, 8.0D, 50.0D, 150.0D);
+
 
         List<Rule> rules = new ArrayList<>();
 
@@ -36,7 +41,7 @@ public class Main {
                 new Condition(big,"Большая", new Variable(1))
         ));
         r1.setConclusion(
-                new Conclusion(big,"На машине",new Variable(0),1.0D)
+                new Conclusion(onCar,"На машине", new Variable(0),1.0D)
         );
         rules.add(r1);
 
@@ -46,7 +51,7 @@ public class Main {
                 new Condition(small,"Маленькая", new Variable(1))
         ));
         r2.setConclusion(
-                new Conclusion(small,"Пешком", new Variable(1),0.3D)
+                new Conclusion(onFoot,"Пешком", new Variable(1),0.3D)
         );
         rules.add(r2);
 
@@ -56,7 +61,7 @@ public class Main {
                 new Condition(small,"Маленькая", new Variable(1))
         ));
         r3.setConclusion(
-                new Conclusion(small,"Бол->Мал",new Variable(2),0.5D)
+                new Conclusion(onFoot,"Бол->Мал", new Variable(2),0.5D)
         );
         rules.add(r3);
 
@@ -66,7 +71,7 @@ public class Main {
                 new Condition(big,"Большая", new Variable(1))
         ));
         r4.setConclusion(
-                new Conclusion(small,"Мал->Бол",new Variable(3),0.5D)
+                new Conclusion(onCar,"Мал->Бол", new Variable(3),0.5D)
         );
         rules.add(r3);
 

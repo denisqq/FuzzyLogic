@@ -10,7 +10,6 @@ import com.denisqq.set.UnionOfFuzzySets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.atomic.DoubleAccumulator;
 import java.util.function.DoubleUnaryOperator;
 import java.util.stream.Collectors;
 import java.util.List;
@@ -38,9 +37,17 @@ public class Logic {
 
 
     public List<Double> defuzzification(final List<UnionOfFuzzySets> sets) {
-
-        //TODO Деффазификация нечеткого множества
-        return null;
+        List<Double> y = new ArrayList<>();
+        for(UnionOfFuzzySets unionOfFuzzySets : sets) {
+            Double i1 = integral(unionOfFuzzySets, true);
+            Double i2 = integral(unionOfFuzzySets, false);
+            if(!i1.equals(0.0D) && !i2.equals(0.0D)){
+                y.add(i1 / i2 );
+            }else{
+                y.add(0.0D);
+            }
+        }
+        return y;
     }
 
     public Map<Integer, Double> aggregation(final Map<Integer, List<Double>> values) {
@@ -53,7 +60,8 @@ public class Logic {
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         v -> v.getValue().stream()
-                        .reduce(1.0D, (a, b) -> a*b)
+                                .max(Double::compareTo)
+                                .orElse(0.0D)
                 ));
     }
 
@@ -84,6 +92,32 @@ public class Logic {
             i++;
         }
         return new ArrayList<>(unionsOfFuzzySets.values());
+    }
+
+    private Double integral(FuzzySet fuzzySet, Boolean useX) {
+        return integrate(0.0D, 100.0D, (x) -> useX ? x * fuzzySet.getValue(x) : fuzzySet.getValue(x));
+    }
+
+    public static Double integrate(Double a, Double b, DoubleUnaryOperator f) {
+        Integer N = 10000;                    // precision parameter
+        Double h = (b - a) / (N - 1);     // step size
+
+        // 1/3 terms
+        Double sum = 1.0 / 3.0 * (f.applyAsDouble(a) + f.applyAsDouble(b));
+
+        // 4/3 terms
+        for (Integer i = 1; i < N - 1; i += 2) {
+            Double x = a + h * i;
+            sum += 4.0 / 3.0 * f.applyAsDouble(x);
+        }
+
+        // 2/3 terms
+        for (Integer i = 2; i < N - 1; i += 2) {
+            Double x = a + h * i;
+            sum += 2.0 / 3.0 * f.applyAsDouble(x);
+        }
+
+        return sum * h;
     }
 
 

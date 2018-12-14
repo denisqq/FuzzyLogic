@@ -19,7 +19,8 @@ public class UnionOfFuzzySets implements FuzzySet {
     @Override
     public Double getValue(Double x) {
         return fuzzySets.stream()
-                .map(item -> item.getValue(x)).max(Double::compare)
+                .map(item -> item.getValue(x))
+                .max(Double::compare)
                 .orElse(0.0);
     }
 
