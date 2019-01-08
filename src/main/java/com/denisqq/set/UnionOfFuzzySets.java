@@ -15,6 +15,13 @@ public class UnionOfFuzzySets implements FuzzySet {
         fuzzySets.add(fuzzySet);
     }
 
+    public List<FuzzySet> getFuzzySets() {
+        return fuzzySets;
+    }
+
+    public void setFuzzySets(List<FuzzySet> fuzzySets) {
+        this.fuzzySets = fuzzySets;
+    }
 
     @Override
     public Double getValue(Double x) {

@@ -9,6 +9,8 @@ public class Trapezoid implements FuzzySet {
     private Double c;
     private Double d;
 
+    public Trapezoid() {
+    }
 
     public Trapezoid(Double a, Double b, Double c, Double d) {
         this.a = a;
@@ -51,24 +53,19 @@ public class Trapezoid implements FuzzySet {
 
     @Override
     public Double getValue(Double x) {
-        Double ret = 0.0D;
-        if (x <= a) {
-            ret = 0.0D;
-        }
-        else if (x >= a && x < b) {
-            ret = (x - a) / (b - a);
-        }
-        else if (x >= b && x <= c) {
-            ret = 1.0D;
-        }
-        else if (x > c && x <= d) {
-            ret = (d - x) / (d - c);
-        }
-        else if (d < x) {
-            ret = 0.0D;
+        Double val = 0.0D;
+
+        if(x < a || x > b){
+            val = 0.0D;
+        } else if(a <= x && x <= b) {
+            val = (x - a)/(b - a);
+        } else if(b <= x && x <= c) {
+            val = 1.0D;
+        } else if(c <= x && x <= d){
+            val = (d - x)/(d - c);
         }
 
-        return ret;
+        return val;
     }
 
     @Override

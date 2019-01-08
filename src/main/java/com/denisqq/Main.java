@@ -1,5 +1,7 @@
 package com.denisqq;
 
+import com.denisqq.functions.LTrapezoid;
+import com.denisqq.functions.RTrapezoid;
 import com.denisqq.functions.Trapezoid;
 import com.denisqq.functions.Triangle;
 import com.denisqq.rule.Conclusion;
@@ -16,21 +18,12 @@ public class Main {
 
     public static void main(String[] args) {
         Logic logic = new Logic();
-        List<Double> values = Arrays.asList(5D, 7D);
-        Triangle onFoot = new Triangle()
-                .setOpposite(0D)
-                .setAdjacent(12D)
-                .setHypotenuse(13D)
-                .build();
+        List<Double> values = Arrays.asList(7.0D, 15.0D);
+        Triangle onFoot = new Triangle(0.0D, 7.0D, 3.0D);
+        Triangle onCar = new Triangle(4.0D,15.0D,8.0D);
 
-        Triangle onCar = new Triangle()
-                .setOpposite(8D)
-                .setAdjacent(15D)
-                .setHypotenuse(17D)
-                .build();
-
-        Trapezoid big = new Trapezoid(7.0D, 25.0D, 70.0D, 100.0D);
-        Trapezoid small = new Trapezoid(0.0D, 8.0D, 50.0D, 150.0D);
+        LTrapezoid big = new LTrapezoid(4.0D, 8.0D);
+        RTrapezoid small = new RTrapezoid(0.0D, 5.0D);
 
 
         List<Rule> rules = new ArrayList<>();
@@ -51,7 +44,7 @@ public class Main {
                 new Condition(small,"Маленькая", new Variable(1))
         ));
         r2.setConclusion(
-                new Conclusion(onFoot,"Пешком", new Variable(1),0.3D)
+                new Conclusion(onFoot,"Пешком", new Variable(0),1.0D)
         );
         rules.add(r2);
 
@@ -61,7 +54,7 @@ public class Main {
                 new Condition(small,"Маленькая", new Variable(1))
         ));
         r3.setConclusion(
-                new Conclusion(onFoot,"Бол->Мал", new Variable(2),0.5D)
+                new Conclusion(onFoot,"Бол->Мал", new Variable(0),0.5D)
         );
         rules.add(r3);
 
@@ -71,7 +64,7 @@ public class Main {
                 new Condition(big,"Большая", new Variable(1))
         ));
         r4.setConclusion(
-                new Conclusion(onCar,"Мал->Бол", new Variable(3),0.5D)
+                new Conclusion(onCar,"Мал->Бол", new Variable(0),0.5D)
         );
         rules.add(r3);
 
@@ -83,7 +76,7 @@ public class Main {
         List<UnionOfFuzzySets> accumulated = logic.accumulation(activated);
         List<Double> defuz = logic.defuzzification(accumulated);
 
-        System.out.println(logic.fuzzification(values) + "fuzzification");
+        System.out.println(fuz + " fuzzification");
         System.out.println(aggregated + " aggregation");
         System.out.println(activated + " activated");
         System.out.println(accumulated + " accumulated");

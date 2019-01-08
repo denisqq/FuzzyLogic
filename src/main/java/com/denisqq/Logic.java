@@ -36,17 +36,20 @@ public class Logic {
     }
 
 
-    public List<Double> defuzzification(final List<UnionOfFuzzySets> sets) {
+    public List<Double> defuzzification(final List<UnionOfFuzzySets> unionOfFuzzySetsList) {
         List<Double> y = new ArrayList<>();
-        for(UnionOfFuzzySets unionOfFuzzySets : sets) {
-            Double i1 = integral(unionOfFuzzySets, true);
-            Double i2 = integral(unionOfFuzzySets, false);
-            if(!i1.equals(0.0D) && !i2.equals(0.0D)){
-                y.add(i1 / i2 );
-            }else{
-                y.add(0.0D);
-            }
-        }
+        unionOfFuzzySetsList.forEach(sets -> {
+            sets.getFuzzySets().forEach(set -> {
+                Double i1 = integral(set, true);
+                Double i2 = integral(set, false);
+                if(!i1.equals(0.0D) && !i2.equals(0.0D)){
+                    y.add(i1 / i2 );
+                }else{
+                    y.add(0.0D);
+                }
+            });
+        });
+
         return y;
     }
 

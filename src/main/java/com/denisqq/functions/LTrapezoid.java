@@ -2,20 +2,18 @@ package com.denisqq.functions;
 
 import com.denisqq.set.FuzzySet;
 
-public class Triangle implements FuzzySet {
+public class LTrapezoid implements FuzzySet {
 
     private Double a;
     private Double b;
-    private Double m;
 
-    public Triangle() {
+    public LTrapezoid() {
+
     }
 
-
-    public Triangle(Double a, Double b, Double m) {
+    public LTrapezoid(Double a, Double b) {
         this.a = a;
         this.b = b;
-        this.m = m;
     }
 
     public Double getA() {
@@ -34,38 +32,26 @@ public class Triangle implements FuzzySet {
         this.b = b;
     }
 
-    public Double getM() {
-        return m;
-    }
-
-    public void setM(Double m) {
-        this.m = m;
-    }
-
     @Override
     public Double getValue(Double x) {
         Double val = 0.0D;
 
-        if(x <= a){
+        if(x < a){
             val = 0.0D;
-        } else if((a < x) && (x <= m)){
-            val = (x - a)/(m - a);
-        } else if((m < x) && (x < b)) {
-            val = (b - x)/(b - m);
-        } else if(x >= b) {
-            val = 0.0D;
+        } else if(a <= x && x <= b) {
+            val = (x - a)/(b - a);
+        } else if(x > b){
+            val = 1.0D;
         }
 
         return val;
     }
 
-
     @Override
     public String toString() {
-        return "Triangle{" +
+        return "LTrapezoid{" +
                 "a=" + a +
                 ", b=" + b +
-                ", m=" + m +
                 '}';
     }
 }
