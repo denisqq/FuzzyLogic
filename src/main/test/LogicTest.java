@@ -1,8 +1,6 @@
-package com.denisqq;
-
+import com.denisqq.Logic;
 import com.denisqq.functions.LTrapezoid;
 import com.denisqq.functions.RTrapezoid;
-import com.denisqq.functions.Trapezoid;
 import com.denisqq.functions.Triangle;
 import com.denisqq.rule.Conclusion;
 import com.denisqq.rule.Condition;
@@ -10,13 +8,18 @@ import com.denisqq.rule.Rule;
 import com.denisqq.rule.Variable;
 import com.denisqq.set.ActivatedFuzzySet;
 import com.denisqq.set.UnionOfFuzzySets;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+public class LogicTest {
 
 
-import java.util.*;
-
-public class Main {
-
-    public static void main(String[] args) {
+    @Test
+    public void logicTest() {
         Logic logic = new Logic();
         List<Double> values = Arrays.asList(7.0D, 15.0D);
         Triangle onFoot = new Triangle(0.0D, 7.0D, 3.0D);
@@ -81,8 +84,5 @@ public class Main {
         System.out.println(activated + " activated");
         System.out.println(accumulated + " accumulated");
         System.out.println(defuz + " defuz");
-
     }
-
-
 }
