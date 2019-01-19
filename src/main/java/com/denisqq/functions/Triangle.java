@@ -1,8 +1,6 @@
 package com.denisqq.functions;
 
-import com.denisqq.set.FuzzySet;
-
-public class Triangle implements FuzzySet {
+public class Triangle implements Function {
 
     private Double a;
     private Double b;

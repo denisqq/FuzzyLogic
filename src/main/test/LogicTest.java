@@ -6,20 +6,18 @@ import com.denisqq.rule.Conclusion;
 import com.denisqq.rule.Condition;
 import com.denisqq.rule.Rule;
 import com.denisqq.rule.Variable;
-import com.denisqq.set.ActivatedFuzzySet;
-import com.denisqq.set.UnionOfFuzzySets;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 public class LogicTest {
     @Test
     public void logicTest() {
-        Logic logic = new Logic();
-        List<Double> values = Arrays.asList(7.0D, 15.0D);
+
+        List<Double> values = Arrays.asList(0.00001D, 0.0000001D);
+
         Triangle onFoot = new Triangle(0.0D, 7.0D, 3.0D);
         Triangle onCar = new Triangle(4.0D, 15.0D, 8.0D);
 
@@ -69,18 +67,10 @@ public class LogicTest {
         );
         rules.add(r3);
 
-        logic.setRules(rules);
 
-        Map<Integer, List<Double>> fuz = logic.fuzzification(values);
-        Map<Integer, Double> aggregated = logic.aggregation(fuz);
-        Map<Integer, ActivatedFuzzySet> activated = logic.activation(aggregated);
-        List<UnionOfFuzzySets> accumulated = logic.accumulation(activated);
-        List<Double> defuz = logic.defuzzification(accumulated);
+        Logic logic = new Logic(rules);
 
-        System.out.println(fuz + " fuzzification");
-        System.out.println(aggregated + " aggregation");
-        System.out.println(activated + " activated");
-        System.out.println(accumulated + " accumulated");
-        System.out.println(defuz + " defuz");
+        System.out.println("result: " + logic.calc(values));
+
     }
 }

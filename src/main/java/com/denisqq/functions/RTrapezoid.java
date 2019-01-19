@@ -1,8 +1,6 @@
 package com.denisqq.functions;
 
-import com.denisqq.set.FuzzySet;
-
-public class RTrapezoid implements FuzzySet {
+public class RTrapezoid implements Function {
 
     private Double c;
     private Double d;

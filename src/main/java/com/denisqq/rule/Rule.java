@@ -1,7 +1,5 @@
 package com.denisqq.rule;
 
-import java.io.Serializable;
-import java.util.Objects;
 import java.util.stream.Stream;
 import java.util.List;
 

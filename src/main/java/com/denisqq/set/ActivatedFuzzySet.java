@@ -1,21 +1,33 @@
 package com.denisqq.set;
 
-public class ActivatedFuzzySet implements FuzzySet {
+import com.denisqq.functions.Function;
 
-    private FuzzySet fuzzySet;
+public class ActivatedFuzzySet {
+
+    private Function fuzzySet;
 
     private Double truthDegree;
 
-    public ActivatedFuzzySet(FuzzySet fuzzySet, Double truthDegree) {
+    public ActivatedFuzzySet(Function fuzzySet, Double truthDegree) {
         this.fuzzySet = fuzzySet;
         this.truthDegree = truthDegree;
     }
 
-    @Override
-    public Double getValue(Double x) {
-        return Math.min(fuzzySet.getValue(x), truthDegree);
+    public Function getFuzzySet() {
+        return fuzzySet;
     }
 
+    public void setFuzzySet(Function fuzzySet) {
+        this.fuzzySet = fuzzySet;
+    }
+
+    public Double getTruthDegree() {
+        return truthDegree;
+    }
+
+    public void setTruthDegree(Double truthDegree) {
+        this.truthDegree = truthDegree;
+    }
 
     @Override
     public String toString() {

@@ -1,28 +1,27 @@
 package com.denisqq.rule;
 
-import com.denisqq.set.FuzzySet;
-
-import java.util.Objects;
+import com.denisqq.functions.Function;
 
 public class Statement {
 
-    private FuzzySet term;
+    private Function term;
 
     private String name;
 
     private Variable variable;
 
-    public Statement(FuzzySet term, String name, Variable variable) {
+    public Statement(Function term, String name, Variable variable) {
         this.term = term;
         this.name = name;
         this.variable = variable;
     }
 
-    public FuzzySet getTerm() {
+
+    public Function getTerm() {
         return term;
     }
 
-    public void setTerm(FuzzySet term) {
+    public void setTerm(Function term) {
         this.term = term;
     }
 
