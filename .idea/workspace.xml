@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc633459-d37e-4f85-acce-2c716d87798c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/LTrapezoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/LTrapezoid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/RTrapezoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/RTrapezoid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/Trapezoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/Trapezoid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/functions/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Conclusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Conclusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Rule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Statement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/set/ActivatedFuzzySet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/denisqq/set/ActivatedFuzzySet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/set/FuzzySet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/denisqq/set/UnionOfFuzzySets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/LogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/LogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FuzzyLogic-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/FuzzyLogic-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FuzzyLogic.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/Logic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/Logic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/functions/LTrapezoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/functions/LTrapezoid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/functions/RTrapezoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/functions/RTrapezoid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/functions/Trapezoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/functions/Trapezoid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/functions/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/functions/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Conclusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Conclusion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Condition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Condition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Rule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Rule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Statement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/rule/Statement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/set/ActivatedFuzzySet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/denisqq/set/ActivatedFuzzySet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/set/FuzzySet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/denisqq/set/UnionOfFuzzySets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LogicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,15 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/rule/Conclusion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/rule/Condition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -64,10 +24,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
+            <state relative-caret-position="90">
               <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,13 +37,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/rule/Rule.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -91,16 +57,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/Logic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="1110">
               <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#2564#2565#0" expanded="true" />
-                <element signature="e#2592#2593#0" expanded="true" />
-                <element signature="e#2619#2620#0" expanded="true" />
-                <element signature="e#2653#2654#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/functions/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="60">
               <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding>
                 <element signature="e#378#379#0" expanded="true" />
@@ -211,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/rule/Variable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/functions/Linear.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/set/UnionOfFuzzySets.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/functions/LTrapezoid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/functions/RTrapezoid.java" />
@@ -225,6 +184,8 @@
         <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/src/main/test/LogicTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/denisqq/Logic.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -251,8 +212,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -263,6 +223,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,60 +250,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FuzzyLogic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FuzzyLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="denisqq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FuzzyLogic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FuzzyLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="denisqq" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FuzzyLogic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FuzzyLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="denisqq" type="462c0819:PsiDirectoryNode" />
-              <item name="rule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FuzzyLogic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FuzzyLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="denisqq" type="462c0819:PsiDirectoryNode" />
-              <item name="set" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FuzzyLogic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FuzzyLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547894065415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547894165564" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../play-java-hello-world-tutorial" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -435,7 +353,8 @@
       <workItem from="1547572667829" duration="1409000" />
       <workItem from="1547661311881" duration="18000" />
       <workItem from="1547834655866" duration="4014000" />
-      <workItem from="1547891857977" duration="2109000" />
+      <workItem from="1547891857977" duration="2543000" />
+      <workItem from="1553364286407" duration="315000" />
     </task>
     <servers />
   </component>
@@ -472,12 +391,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59820000" />
+    <option name="totallyTimeSpent" value="60569000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17716116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17929563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -487,7 +407,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4204301" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4204301" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4870968" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -495,7 +415,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.32903227" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32903227" />
@@ -630,7 +550,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fuzzylite/jfuzzylite/6.0.1/jfuzzylite-6.0.1.jar!/com/fuzzylite/norm/TNorm.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/fuzzylite/jfuzzylite/6.0.1/jfuzzylite-6.0.1.jar!/com/fuzzylite/rule/Consequent.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/fuzzylite/jfuzzylite/6.0.1/jfuzzylite-6.0.1.jar!/com/fuzzylite/rule/Expression.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/fuzzylite/jfuzzylite/6.0.1/jfuzzylite-6.0.1.jar!/com/fuzzylite/rule/Operator.class" />
@@ -663,13 +582,6 @@
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Map.java" />
     <entry file="file://$PROJECT_DIR$/replay_pid4728.log" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/Main.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/functions/LTrapezoid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -733,30 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/functions/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/rule/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/rule/Conclusion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -771,16 +659,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/set/ActivatedFuzzySet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/test/LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="90">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/Logic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/functions/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="60">
           <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding>
             <element signature="e#378#379#0" expanded="true" />
@@ -793,29 +704,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/Logic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/set/ActivatedFuzzySet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#2564#2565#0" expanded="true" />
-            <element signature="e#2592#2593#0" expanded="true" />
-            <element signature="e#2619#2620#0" expanded="true" />
-            <element signature="e#2653#2654#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/LogicTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/functions/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/denisqq/rule/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
