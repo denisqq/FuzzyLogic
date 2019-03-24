@@ -16,7 +16,7 @@ public class LogicTest {
     @Test
     public void logicTest() {
 
-        List<Double> values = Arrays.asList(0.00001D, 0.0000001D);
+        List<Double> values = Arrays.asList(0.00001D);
 
         Triangle onFoot = new Triangle(0.0D, 7.0D, 3.0D);
         Triangle onCar = new Triangle(4.0D, 15.0D, 8.0D);

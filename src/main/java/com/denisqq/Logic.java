@@ -101,8 +101,13 @@ public class Logic {
 
 
     private Double getConditionValue(final Condition condition, final List<Double> values){
-        return condition.getTerm()
-                .getValue(values.get(condition.getVariable().getId()));
+        try {
+            return condition.getTerm()
+                    .getValue(values.get(condition.getVariable().getId()));
+        } catch (IndexOutOfBoundsException e) {
+            return 0D;
+        }
+
     }
 
     public List<Rule> getRules() {
