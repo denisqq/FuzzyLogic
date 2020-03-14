@@ -4,33 +4,28 @@ import com.denisqq.rule.Conclusion;
 import com.denisqq.rule.Condition;
 import com.denisqq.rule.Rule;
 import com.denisqq.set.ActivatedFuzzySet;
+import lombok.Builder;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Logic {
+@Builder
+public class FuzzyLogic {
 
     private List<Rule> rules;
 
-    public Logic() {
-    }
-
-    public Logic(List<Rule> rules) {
+    public FuzzyLogic(List<Rule> rules) {
         this.rules = rules;
     }
 
     public Double calc(final List<Double> values) {
-
         Map<Integer, List<Double>> fuz = fuzzification(values);
         Map<Integer, Double> aggregated = aggregation(fuz);
         List<ActivatedFuzzySet> activated = activation(aggregated);
-        Double ret = defuzzification(aggregated.values(), activated);
 
-
-        return ret;
+        return defuzzification(aggregated.values(), activated);
     }
-
 
     //Вводим нечеткость с помощью функций истинности
     private Map<Integer, List<Double>> fuzzification(final List<Double> values){
@@ -52,15 +47,15 @@ public class Logic {
     //Вычисляем центр масс
     private Double defuzzification(final Collection<Double> aggregated, final List<ActivatedFuzzySet> activatedFuzzySets) {
 
-        Double ruleConclusion = activatedFuzzySets.stream()
+        double ruleConclusion = activatedFuzzySets.stream()
                 .mapToDouble(ActivatedFuzzySet::getTruthDegree)
                 .sum();
 
-        Double agg = aggregated.stream()
+        double agg = aggregated.stream()
                 .mapToDouble(x -> x)
                 .sum();
 
-        Double ret = 0.0D;
+        double ret = 0.0D;
 
         if(agg != 0) {
             ret = ruleConclusion / agg;
@@ -98,23 +93,21 @@ public class Logic {
         return ret;
     }
 
-
-
     private Double getConditionValue(final Condition condition, final List<Double> values){
         try {
             return condition.getTerm()
-                    .getValue(values.get(condition.getVariable().getId()));
+                    .calculate(values.get(condition.getVariable().getId()));
         } catch (IndexOutOfBoundsException e) {
             return 0D;
         }
-
     }
 
-    public List<Rule> getRules() {
-        return rules;
+    public FuzzyLogic addRule(Rule rule) {
+        if(this.rules == null) {
+            this.rules = new ArrayList<>();
+        }
+        this.rules.add(rule);
+        return this;
     }
 
-    public void setRules(List<Rule> rules) {
-        this.rules = rules;
-    }
 }

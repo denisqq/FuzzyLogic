@@ -32,7 +32,7 @@ public class LTrapezoid implements Function {
     }
 
     @Override
-    public Double getValue(Double x) {
+    public Double calculate(Double x) {
         Double val = 0.0D;
 
         if(x < a){

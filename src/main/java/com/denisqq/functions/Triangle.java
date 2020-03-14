@@ -41,8 +41,8 @@ public class Triangle implements Function {
     }
 
     @Override
-    public Double getValue(Double x) {
-        Double val = 0.0D;
+    public Double calculate(Double x) {
+        double val = 0.0D;
 
         if(x <= a){
             val = 0.0D;

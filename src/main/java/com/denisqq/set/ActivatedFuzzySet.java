@@ -5,7 +5,6 @@ import com.denisqq.functions.Function;
 public class ActivatedFuzzySet {
 
     private Function fuzzySet;
-
     private Double truthDegree;
 
     public ActivatedFuzzySet(Function fuzzySet, Double truthDegree) {

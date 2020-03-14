@@ -1,4 +1,4 @@
-import com.denisqq.Logic;
+import com.denisqq.FuzzyLogic;
 import com.denisqq.functions.LTrapezoid;
 import com.denisqq.functions.RTrapezoid;
 import com.denisqq.functions.Triangle;
@@ -10,13 +10,14 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-public class LogicTest {
+public class FuzzyLogicTest {
     @Test
     public void logicTest() {
 
-        List<Double> values = Arrays.asList(0.00001D);
+        List<Double> values = Collections.singletonList(0.00001D);
 
         Triangle onFoot = new Triangle(0.0D, 7.0D, 3.0D);
         Triangle onCar = new Triangle(4.0D, 15.0D, 8.0D);
@@ -68,9 +69,9 @@ public class LogicTest {
         rules.add(r3);
 
 
-        Logic logic = new Logic(rules);
+        FuzzyLogic fuzzyLogic = new FuzzyLogic(rules);
 
-        System.out.println("result: " + logic.calc(values));
+        System.out.println("result: " + fuzzyLogic.calc(values));
 
     }
 }

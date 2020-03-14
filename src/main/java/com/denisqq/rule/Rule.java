@@ -1,8 +1,16 @@
 package com.denisqq.rule;
 
-import java.util.stream.Stream;
-import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Rule {
 
     private List<Condition> conditionList;
@@ -26,6 +34,15 @@ public class Rule {
 
     public void setConclusion(Conclusion conclusion) {
         this.conclusion = conclusion;
+    }
+
+    public Rule addCondition(Condition condition) {
+        if(conditionList == null) {
+            this.conditionList = new ArrayList<>();
+        }
+        conditionList.add(condition);
+
+        return this;
     }
 
     @Override

@@ -1,19 +1,21 @@
 package com.denisqq.rule;
 
-import java.util.Objects;
+import lombok.Builder;
 
+@Builder
 public class Variable {
-    private Integer id;
+    @Builder.Default
+    private int id = 0;
 
     public Variable(Integer id) {
         this.id = id;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

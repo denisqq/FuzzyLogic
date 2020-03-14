@@ -50,7 +50,7 @@ public class Trapezoid implements Function {
     }
 
     @Override
-    public Double getValue(Double x) {
+    public Double calculate(Double x) {
         Double val = 0.0D;
 
         if(x < a || x > b){

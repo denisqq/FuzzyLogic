@@ -3,11 +3,8 @@ package com.denisqq.rule;
 import com.denisqq.functions.Function;
 
 public class Statement {
-
     private Function term;
-
     private String name;
-
     private Variable variable;
 
     public Statement(Function term, String name, Variable variable) {
@@ -15,7 +12,6 @@ public class Statement {
         this.name = name;
         this.variable = variable;
     }
-
 
     public Function getTerm() {
         return term;
